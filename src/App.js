@@ -1,8 +1,17 @@
+import SideNavigation from "./Component/sideNavigation";
+import TopHeader from "./Component/TopHeader";
+import Footer from "./Component/footer";
+import MainContainer from "./Component/MainContainer";
 function App() {
   return (
-    <div className="App">
-      Hello World
+    <>
+    <TopHeader />
+    <div className="layoutmiddle">
+    <SideNavigation />
+    <MainContainer />
     </div>
+    <Footer />
+    </>
   );
 }
 
