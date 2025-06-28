@@ -10,6 +10,7 @@ import Faq from "./AppFeature/Faq";
 
 
 const PageContent = () => {
+  
   const location = useLocation();
 
   const getTitle = (path) => {
