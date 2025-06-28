@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import '../style.css';
 
-const TopHeader = () => {
+const TopHeader = ({ title }) => {
   return (
-    <header>  
-      Webcom Dashboard
+    <header className="top-header">
+      <div className="header-content">
+        <h1>{title}</h1>
+        <div className="header-right">
+          {/* Placeholder for future search/user/logout */}
+        </div>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default TopHeader
+export default TopHeader;

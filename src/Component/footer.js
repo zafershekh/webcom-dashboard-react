@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../style.css';
 
 const Footer = () => {
-    return (
-        <footer>
-            
-            Designed and developed by<strong>&nbsp;Mohammad Zafer Shekh</strong>
-        </footer>
-    )
-}
+  return (
+    <footer>
+      Designed and developed by <strong>&nbsp;Mohammad Zafer Shekh</strong>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
