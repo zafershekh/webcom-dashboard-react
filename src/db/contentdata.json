@@ -1,40 +1,42 @@
 [
     {
         "title": "JSON Generator",
-        "icon": "data_object"
+        "icon": "data_object",
+        "url": "/jsongenerator"
     },
     {
         "title": "URL Generator",
-        "icon": "link"
-    }
-    ,
+        "icon": "link",
+        "url": "/urlgenerator"
+    },
     {
         "title": "Epoch Timestamp",
-        "icon": "timer"
-    }
-    ,
+        "icon": "timer",
+        "url": "/epoctimer"
+    },
     {
         "title": "Pids Separation",
-        "icon": "precision_manufacturing"
-    }
-    ,
+        "icon": "precision_manufacturing",
+        "url": "/pidgenerator"
+    },
     {
         "title": "Brand Inventory Finder",
-        "icon": "photo_library"
-    }
-    ,
+        "icon": "photo_library",
+        "url": "/inventoryfinder"
+    },
     {
         "title": "Mark My Calendar",
-        "icon": "event"
-    }
-    ,
+        "icon": "event",
+        "url": "/markmycalendar"
+    },
     {
         "title": "All SOPs",
-        "icon": "book_5"
-    }
-    ,
+        "icon": "book_5",
+        "url": "/sop"
+    },
     {
         "title": "FAQ",
-        "icon": "quiz"
+        "icon": "quiz",
+        "url": "/faq"
     }
 ]

@@ -6,12 +6,15 @@ import TopHeader from "./Component/TopHeader";
 import Footer from "./Component/footer";
 import MainContainer from "./Component/MainContainer";
 import AboutUs from "./Component/AboutUs";
+import Faq from "./AppFeature/Faq";
+
 
 const PageContent = () => {
   const location = useLocation();
 
   const getTitle = (path) => {
     switch (path) {
+      case '/faq': return 'Faq';
       case '/about': return 'About Us';
       case '/': return 'Webcom Dashboard';
       default: return 'Webcom Dashboard';
@@ -27,6 +30,7 @@ const PageContent = () => {
             <Routes>
               <Route path="/" element={<MainContainer />} />
               <Route path="/about" element={<AboutUs />} />
+              <Route path="/faq" element={<Faq />} />
             </Routes>
           </main>
         </div>

@@ -1,4 +1,4 @@
-/* General Layout */
+/* Default Properties Set as per our Requirement */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -6,19 +6,6 @@ html, body, #root {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-.app-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.main-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
 }
 
 .top-header {
@@ -115,6 +102,14 @@ main::-webkit-scrollbar-thumb {
 
 
 /* Main Cards */
+.main-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
 .showproject {
   width: 240px;
   background-color: #ffffff;
@@ -124,6 +119,9 @@ main::-webkit-scrollbar-thumb {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: #2f3542;
+
 }
 
 .showproject:hover {
@@ -141,13 +139,22 @@ main::-webkit-scrollbar-thumb {
   font-size: 13px;
   opacity: 0.8;
 }
+
+/* Entire Component Wrap for Page Layout */
+.app-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Middle Page Layout Set Nav and Maincontainer, etc  */
 .layoutmiddle {
   display: flex;
   flex: 1;
   overflow: hidden;
 }
 
-/* Footer */
+/* Footer Section Style Start from HERE  */
 footer {
   background-color: #ffffff;
   height: 10dvh;
@@ -159,6 +166,8 @@ footer {
   border-top: 1px solid #e0e0e0;
 }
 
+
+/* About Us Section Style Start from HERE */
 .about-container {
   max-width: 800px;
   margin: 0 auto;
@@ -189,6 +198,73 @@ footer {
   color: #555;
 }
 
+/* Faq toggle style start for HERE */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
+}
+
+.faq-item {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px; /* ✅ Add padding around the header */
+  cursor: pointer;
+  background-color: #f9f9f9; /* Optional light contrast */
+  border-radius: 14px 14px 0 0;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.faq-icon {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b6;
+  margin-left: 10px;
+}
+
+.faq-description {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  word-break: break-word;
+  background-color: #ffffff;
+}
+
+.faq-item.open .faq-description {
+  max-height: 1000px;
+  padding: 16px 24px 20px;
+  border-top: 1px solid #eee;
+}
+
 
 
 
@@ -212,4 +288,12 @@ footer {
     flex-direction: row;
     gap: 10px;
   }
+   .faq-container {
+    padding: 3px;
+  }
+
+  .faq-item {
+    max-width: 100%;
+  }
 }
+

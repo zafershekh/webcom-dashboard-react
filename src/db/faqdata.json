@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Can We Create A Page Having \"Nykaa\" As Page Type?",
+        "description": "No, Nykaa Keywork does not Randring on the iOS Devices. Kindly Reconfirm the same before proceeding."
+    },
+    {
+        "title": "Is it mandatory to update correct & accurate Analytical Title?",
+        "description":"Yes, This would assist in pulling out correct foorprints for individual tile."
+    },
+    {
+        "title": "How to add rupee sign while uploding bulk csv files?",
+        "description":"You have to use ( â‚¹ ) instead of ₹ rupee Sign."
+    },
+    {
+        "title": "How to make hybrid for Luxe Brands?",
+        "description":"You will need to create hybrid on the following page type desktop-category-listing, mweb-category-listing, app-category-listing & ultra_lux-app-category-listing."
+    },
+    {
+        "title": "Which App link data needs to be selected for CMS Landing Pages.",
+        "description":"For Example: https://www.nykaa.com/giftcard/list or https://www.nykaa.com/spin-the-wheel-app/lp this url is a cms link hence we will select the option of landing page."
+    },
+    {
+        "title": "What is the Page Type of the Order Confirmaion Page or Order Confirmaion Mail.",
+        "description":"The Page Type of Order Confirmaion Page is: 'app-order-confirmation-center' & Order Confirmaion Mail is: 'order-confirmation-mail' "
+    },
+    {
+        "title": "What is the Page Type of the Welcome Screen.",
+        "description":"The Page Type of Welcome Screen is: 'welcome-screen'"
+    },
+    {
+        "title": "What is the Prod URL for StoryBook?",
+        "description":"Please find the Prod URL For Story Book: https://nykaa-widgets.nykaa.com/storybook/?path=/story/preview-service-previews--full-page-preview"
+    },
+    {
+        "title": "What is the PreProd URL for StoryBook?",
+        "description":"Please find the PreProd URL For Story Book: https://nykaa-widgets-staging.nykaa.com/storybook/"
+    },
+    {
+        "title": "What is the URL for Inventory Management?",
+        "description":"Please find the Inventory Management: https://prod-adtech-inventory-frontend.nyk00-int.network/inventoryManagement"
+    },
+    {
+        "title": "Where we found the header creative for HP Takeover?",
+        "description":"You Can find the all the header in below folder: https://drive.google.com/drive/folders/13xOE4ADNMyIlCUjjYFxJ5kEv-Gx2jSEl"
+    },
+    {
+        "title": "What is the Page Type for Strem/ IDN Page?",
+        "description":"Please find the Page Type for IDN: stream-play-explore"
+    },
+    {
+        "title": "Where we need to add New Landing Page and Hybrid Page details for Tracking?",
+        "description":"When we create the new page we need to keep the record in the following sheet for tracking: https://docs.google.com/spreadsheets/d/1sBSk9vj87AoOfuF8YXoKZSi7yt_60hZsdd7ujP9KWYM/edit?gid=1449718981#gid=1449718981"
+    },
+    {
+    "title": "What is the Page Type for Beauty Calender?",
+    "description":"Please find the Page Type for Beauty Calender: live-calendar-page"
+    },
+    {
+    "title": "What is the widget id for retail store/ Store and Events Page for banner Changes",
+    "description":"If you wan't to change or add the banner to retail page, use this widget: '62c666d521d1458ec2bc44cb'."
+    }
+]
