@@ -7,6 +7,8 @@ import Footer from "./Component/footer";
 import MainContainer from "./Component/MainContainer";
 import AboutUs from "./Component/AboutUs";
 import Faq from "./AppFeature/Faq";
+import Sop from './AppFeature/Sop';
+import MarkMyCalender from './AppFeature/MarkMyCalender';
 
 
 const PageContent = () => {
@@ -15,7 +17,9 @@ const PageContent = () => {
 
   const getTitle = (path) => {
     switch (path) {
-      case '/faq': return 'Faq';
+      case '/markmycalendar': return "Mark My Calendar";
+      case '/sop': return "SOP Library";
+      case '/faq': return "FAQ's";
       case '/about': return 'About Us';
       case '/': return 'Webcom Dashboard';
       default: return 'Webcom Dashboard';
@@ -32,6 +36,8 @@ const PageContent = () => {
               <Route path="/" element={<MainContainer />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/faq" element={<Faq />} />
+              <Route path="/sop" element={<Sop />} />
+              <Route path='/markmycalendar' element={<MarkMyCalender />}/>
             </Routes>
           </main>
         </div>

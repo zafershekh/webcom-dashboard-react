@@ -266,6 +266,51 @@ footer {
 }
 
 
+/* SOP Section design start for HERE */
+.sop-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sop-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  width: 240px;
+  padding: 30px 20px;
+  text-decoration: none;
+  color: #1f1f1f;
+  transition: all 0.3s ease;
+}
+
+.sop-card:hover {
+  background-color: #0077b6;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sop-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.sop-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+
 
 
 
