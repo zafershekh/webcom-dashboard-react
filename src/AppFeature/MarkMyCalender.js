@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../style.css';
+
 
 const DateTimeFormat = (datetime) => datetime.toISOString().replace(/-|:|\.\d+/g, '');
 
@@ -46,18 +49,20 @@ const MarkMyCalenderInput = () => {
 
             setIsGenerated(true); //show result
         } else {
-            alert('Please fill in all the fields.');
+            toast.error("Please fill in all the fields.");
+            // alert("Please fill in all the fields.")
             setIsGenerated(false); // hide result and throw Popup
         }
     };
 
     const copyToClipboard = (text) => {
         navigator.clipboard.writeText(text);
-        alert("URL copied to clipboard!");
+        toast.success("URL copied to clipboard!");
     };
 
     return (
         <div className="calendar-wrapper">
+            <ToastContainer position="top-right" autoClose={3000} />
             <div className="calendar-form-card">
                 <h2>Mark My Calendar</h2>
                 <form onSubmit={handleSubmit} className="calendar-form">
@@ -86,11 +91,12 @@ const MarkMyCalenderInput = () => {
                             <div className="url-box">{appUrl}</div>
                             <button onClick={() => copyToClipboard(appUrl)}>Copy App URL</button>
                         </div>
-
+                        
                         <div className="url-block">
                             <div className="url-label">Desktop URL</div>
                             <div className="url-box">{desktopUrl}</div>
                             <button onClick={() => copyToClipboard(desktopUrl)}>Copy Desktop URL</button>
+                            
                         </div>
                     </>
                 ) : (
