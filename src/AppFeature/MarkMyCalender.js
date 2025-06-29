@@ -1,31 +1,105 @@
-import React from 'react'
+import React, { useState } from 'react';
+import '../style.css';
 
-const MarkMyCalender = () => {
-  return (
-    <div className='markmycalender-grid'>
-      <div className="markmycalender-input">
-			<span>Enter Event Title</span>
-			<input type="text" id="mmctitle" />
-			<span>Enter Event Discription</span>
-			<textarea  id="mmcdesc"></textarea>
-			<span>Pick Start date and Time</span>
-			<input type="datetime-local" id="mmcstartdate" / >
-			<span class="textbox_title">Pick End date and Time</span>
-			<input type="datetime-local" id="mmcenddate" />
-			<input type="button" id="getmmcurl" value="Get URL" / >
-		</div>
-	
-		<div  id="showappurl">
-			<span>App URL</span>
-			<div id="mmcappurlresult"></div>
-		</div>
-		<div id="showdeskurl">
-			<span>Desktop URL</span>
-			<div id="mmcurldesktopresult" ></div>
-	
-		</div>
-    </div>
-  )
-}
+const DateTimeFormat = (datetime) => datetime.toISOString().replace(/-|:|\.\d+/g, '');
 
-export default MarkMyCalender
+const MarkMyCalenderInput = () => {
+    const [getData, setData] = useState({
+        title: '',
+        description: '',
+        startdatetime: '',
+        enddatetime: ''
+    });
+
+    const [desktopUrl, setDesktopUrl] = useState('');
+    const [appUrl, setAppUrl] = useState('');
+    const [isGenerated, setIsGenerated] = useState(false);
+
+    const handleChanges = (ev) => {
+        const { name, value } = ev.target;
+        setData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (ev) => {
+        ev.preventDefault();
+        const { title, description, startdatetime, enddatetime } = getData;
+
+        if (title && description && startdatetime && enddatetime) {
+            const start = new Date(startdatetime);
+            const end = new Date(enddatetime);
+
+            const encodedDescription = encodeURIComponent(description).replace(/%20/g, '+').replace(/%/g, '%25');
+            const baseUrl = 'https://calendar.google.com/calendar/u/0/r/eventedit?';
+
+            const desktopCalendarURL =
+                baseUrl +
+                '&text=' + encodeURIComponent(title) +
+                '&details=' + encodedDescription +
+                '&dates=' + DateTimeFormat(start) + '/' + DateTimeFormat(end);
+            setDesktopUrl(desktopCalendarURL);
+
+            const appCalendarURL = `${start.getTime()}||${end.getTime()}||${title}||www.nykaa.com||${description}||`;
+            setAppUrl(appCalendarURL);
+
+            setIsGenerated(true); //show result
+        } else {
+            alert('Please fill in all the fields.');
+            setIsGenerated(false); // hide result and throw Popup
+        }
+    };
+
+    const copyToClipboard = (text) => {
+        navigator.clipboard.writeText(text);
+        alert("URL copied to clipboard!");
+    };
+
+    return (
+        <div className="calendar-wrapper">
+            <div className="calendar-form-card">
+                <h2>Mark My Calendar</h2>
+                <form onSubmit={handleSubmit} className="calendar-form">
+                    <label>Event Title</label>
+                    <input type="text" name="title" value={getData.title} onChange={handleChanges} placeholder="Enter title" />
+
+                    <label>Event Description</label>
+                    <textarea name="description" value={getData.description} onChange={handleChanges} placeholder="Enter description"></textarea>
+
+                    <label>Start Date & Time</label>
+                    <input type="datetime-local" name="startdatetime" value={getData.startdatetime} onChange={handleChanges} />
+
+                    <label>End Date & Time</label>
+                    <input type="datetime-local" name="enddatetime" value={getData.enddatetime} onChange={handleChanges} />
+
+                    <button type="submit">Generate URLs</button>
+                </form>
+            </div>
+
+            <div className="calendar-result-card">
+                {isGenerated ? (
+                    <>
+                        <h3>Generated URLs</h3>
+                        <div className="url-block">
+                            <div className="url-label">App URL</div>
+                            <div className="url-box">{appUrl}</div>
+                            <button onClick={() => copyToClipboard(appUrl)}>Copy App URL</button>
+                        </div>
+
+                        <div className="url-block">
+                            <div className="url-label">Desktop URL</div>
+                            <div className="url-box">{desktopUrl}</div>
+                            <button onClick={() => copyToClipboard(desktopUrl)}>Copy Desktop URL</button>
+                        </div>
+                    </>
+                ) : (
+                    <div className="placeholder-text">Your generated URLs will appear here after submission.</div>
+                )}
+            </div>
+
+        </div>
+    );
+};
+
+export default MarkMyCalenderInput;

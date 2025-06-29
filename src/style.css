@@ -309,6 +309,127 @@ footer {
   margin: 0;
 }
 
+/* MarkMyCalendar Code start form HERE */
+.calendar-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 30px;
+  max-width: 100%;
+  width: 60vw;      
+  min-width: 600px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.calendar-form-card,
+.calendar-result-card {
+  width: 50%;
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 0;
+  box-sizing: border-box;
+}
+
+
+.calendar-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.calendar-form label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.calendar-form input,
+.calendar-form textarea {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  resize: none;
+}
+
+.calendar-form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.calendar-form button:hover {
+  background-color: #005f8c;
+}
+
+.url-block {
+  margin-bottom: 24px;
+}
+
+.url-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.url-box {
+  background: #f9f9f9;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: monospace;
+  color: #333;
+
+  /* Prevent long URLs from overflowing */
+  word-break: break-word;
+  overflow-wrap: anywhere;
+
+  /* Add horizontal scroll only if really needed */
+  overflow-x: auto;
+
+  /* Ensure it doesn’t expand parent */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+.url-block button {
+  padding: 8px 12px;
+  background: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.url-block button:hover {
+  background-color: #388e3c;
+}
+.placeholder-text {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+  font-size: 15px;
+}
+
+
+
 
 
 
@@ -340,5 +461,11 @@ footer {
   .faq-item {
     max-width: 100%;
   }
+
+  .calendar-wrapper {
+    flex-direction: column;
+    width: 90vw;     
+  }
 }
+
 
