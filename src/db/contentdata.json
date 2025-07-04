@@ -30,11 +30,6 @@
         "url": "/markmycalendar"
     },
     {
-        "title": "SOP Library",
-        "icon": "book_5",
-        "url": "/sop"
-    },
-    {
         "title": "FAQ's",
         "icon": "quiz",
         "url": "/faq"

@@ -2,58 +2,58 @@
     {
         "icon": "library_books",
         "title": "Homepage SOP",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vQTZSNkCqoYZGGhb97c9vnTHaD1eYvyWCLYxCDbaH-1rmSdJs09B0tuQZQPdaX_Ui_0_ymXfB66GM27/pub"
+        "doc": "/SopLibery/Homepage.pdf"
     },
     {
         "icon": "library_books",
         "title": "Pink Box Setup",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vQH8VT1F8DBeBhx33UveJqgW3hI3foi9fh2og7m1psgJImrqkQnYc8nUfEKPkWbSw2CCLvs8Ef2EOOh/pub"
+        "doc": "/SopLibery/PinkBox.pdf"
     },
     {
         "icon": "library_books",
         "title": "API Integration",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vTg_9Ai5SWHb8isuWK2iPqGV8dfrMh7TFBfCDraoPcne8SARIqI9mU3F2uw8W-0N7-8HqFpJg6K3qFT/pub"
+        "doc": "/SopLibery/APIDriven.pdf"
     },
     {
         "icon": "library_books",
         "title": "Inventory Management",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vQ-KzSdxHmxWFJxvPi1QRbkUuR6XOwB34xBNgMBnzYT7FY87tJ0Dnvkdma2U5WbExkz3s-t9HVs_O6s/pub"
+        "doc": "/SopLibery/InventoryManager.pdf"
     },
     {
         "icon": "library_books",
         "title": "Retail Store Workflow",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vRuUnYzeIKo8MBNGF4iI0PDKaq6OgZRoVPDgT6iHdDdWnTNijFM6uBp6bDFgVz8jIRZuSF8Mv3eRNAp/pub"
+        "doc": "/SopLibery/RetailStore.pdf"
     },
     {
         "icon": "library_books",
         "title": "Campaign Manager Guide",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vQwkwHmHyzzMRluN1o-NvwVkC-M9NlCamU9Px8RaJFl_t47sQNaLQ8LVyacdDhVtQZWDO6llAZPqLMz/pub"
+        "doc": "/SopLibery/AdplatformFlight.pdf"
     },
     {
         "icon": "library_books",
         "title": "NGS Store Setup",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vSWcaJOpdwqM_DiuzP3Qt-Ak2Ui9i5DDGdWWRVZz5DNCU3QjG1xPDEkx_NNLHqGX9ATsQo6r2s2bbcY/pub"
+        "doc": "/SopLibery/NGSSOP.pdf"
     },
     {
         "icon": "library_books",
         "title": "Prod to Pre-Prod Cloning",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vTbr5TpV63Xa2W9fBy5-agmMjDw0WqkTkh4UwyPWtcxOrMSzd8I3rAkj-VaU05kW2QCBJcSyoEV_RJb/pub"
+        "doc": "/SopLibery/ProdtoPre-Prod.pdf"
     },
     {
         "icon": "library_books",
         "title": "Gamification Process",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vSpJSyvlIt43YKnAz8AYiaAo9QSn3S-Xk81t-gg3jlbYGwkpieWQ1_Bf_BiGdWBZA/pub"
+        "doc": "/SopLibery/Gamification.pdf"
     },
     {
         "icon": "library_books",
         "title": "Search Banner Setup",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vSnTCKEGWY0C8rV0meKmZjtzJVRq8c1vIR30TR8E7-idokF-VlZWzi2HlQiHvXlsrzkO2Oz4A3jffnQ/pub"
+        "doc": "/SopLibery/SearchPage.pdf"
     },
     {
         
         "icon": "library_books",
         "title": "Flagship Sale Process",
-        "doc": "https://docs.google.com/document/d/e/2PACX-1vQH8VT1F8DBeBhx33UveJqgW3hI3foi9fh2og7m1psgJImrqkQnYc8nUfEKPkWbSw2CCLvs8Ef2EOOh/pub"
+        "doc": "/SopLibery/Flagship.pdf"
     }
 
 ]

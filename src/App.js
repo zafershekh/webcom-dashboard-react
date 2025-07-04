@@ -7,7 +7,8 @@ import Footer from "./Component/footer";
 import MainContainer from "./Component/MainContainer";
 import AboutUs from "./Component/AboutUs";
 import Faq from "./AppFeature/Faq";
-import Sop from './AppFeature/Sop';
+import SopViewer from './AppFeature/SopViewer';
+
 import MarkMyCalender from './AppFeature/MarkMyCalender';
 
 
@@ -16,14 +17,14 @@ const PageContent = () => {
   const location = useLocation();
 
   const getTitle = (path) => {
+  if (path.startsWith('/sop')) return 'SOP Library';
     switch (path) {
       case '/markmycalendar': return "Mark My Calendar";
-      case '/sop': return "SOP Library";
       case '/faq': return "FAQ's";
       case '/about': return 'About Us';
       case '/': return 'Webcom Dashboard';
       default: return 'Webcom Dashboard';
-    }
+  }
   };
   return (
     <>
@@ -36,8 +37,8 @@ const PageContent = () => {
               <Route path="/" element={<MainContainer />} />
               <Route path="/about" element={<AboutUs />} />
               <Route path="/faq" element={<Faq />} />
-              <Route path="/sop" element={<Sop />} />
               <Route path='/markmycalendar' element={<MarkMyCalender />}/>
+              <Route path="/sop/:id" element={<SopViewer />} />
             </Routes>
           </main>
         </div>
