@@ -15,9 +15,9 @@
         "url": "/epoctimer"
     },
     {
-        "title": "Pids Separation",
+        "title": "PID Converter",
         "icon": "precision_manufacturing",
-        "url": "/pidgenerator"
+        "url": "/pidconverter"
     },
     {
         "title": "Brand Inventory Finder",

@@ -8,7 +8,7 @@ import MainContainer from "./Component/MainContainer";
 import AboutUs from "./Component/AboutUs";
 import Faq from "./AppFeature/Faq";
 import SopViewer from './AppFeature/SopViewer';
-
+import PIDConverter from './AppFeature/PIDConverter';
 import MarkMyCalender from './AppFeature/MarkMyCalender';
 
 
@@ -19,6 +19,7 @@ const PageContent = () => {
   const getTitle = (path) => {
   if (path.startsWith('/sop')) return 'SOP Library';
     switch (path) {
+      case '/pidconverter': return "PID Converter";
       case '/markmycalendar': return "Mark My Calendar";
       case '/faq': return "FAQ's";
       case '/about': return 'About Us';
@@ -39,6 +40,7 @@ const PageContent = () => {
               <Route path="/faq" element={<Faq />} />
               <Route path='/markmycalendar' element={<MarkMyCalender />}/>
               <Route path="/sop/:id" element={<SopViewer />} />
+              <Route path='/pidconverter' element={<PIDConverter />} />
             </Routes>
           </main>
         </div>
