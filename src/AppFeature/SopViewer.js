@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 
 const SopViewer = () => {
   const { id } = useParams();
-  const sop = SopLibery[parseInt(id)];
+  const sop = SopLibery.find((item) => item.url === id);
   const [numPages, setNumPages] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 

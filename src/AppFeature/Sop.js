@@ -24,7 +24,7 @@ const Sop = ({ onSelect }) => {
       />
       <div className="sop-list">
         {filteredSops.map((item, index) => (
-  <Link to={`/sop/${index}`} key={index} className="sop-entry">
+  <Link to={`/sop/${item.url}`} key={index} className="sop-entry">
     <span className="material-symbols-outlined">{item.icon}</span>
     <span>{item.title}</span>
   </Link>

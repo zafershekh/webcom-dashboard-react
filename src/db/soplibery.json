@@ -2,58 +2,69 @@
     {
         "icon": "library_books",
         "title": "Homepage SOP",
-        "doc": "/SopLibery/Homepage.pdf"
+        "doc": "/SopLibery/Homepage.pdf",
+        "url": "homepage-sop"
     },
     {
         "icon": "library_books",
         "title": "Pink Box Setup",
-        "doc": "/SopLibery/PinkBox.pdf"
+        "doc": "/SopLibery/PinkBox.pdf",
+        "url": "pinkbox-seup"
     },
     {
         "icon": "library_books",
         "title": "API Integration",
-        "doc": "/SopLibery/APIDriven.pdf"
+        "doc": "/SopLibery/APIDriven.pdf",
+        "url": "api-integration"
     },
     {
         "icon": "library_books",
         "title": "Inventory Management",
-        "doc": "/SopLibery/InventoryManager.pdf"
+        "doc": "/SopLibery/InventoryManager.pdf",
+        "url": "inventory-management"
     },
     {
         "icon": "library_books",
         "title": "Retail Store Workflow",
-        "doc": "/SopLibery/RetailStore.pdf"
+        "doc": "/SopLibery/RetailStore.pdf",
+        "url": "retail-store-sop"
     },
     {
         "icon": "library_books",
         "title": "Campaign Manager Guide",
-        "doc": "/SopLibery/AdplatformFlight.pdf"
+        "doc": "/SopLibery/AdplatformFlight.pdf",
+        "url": "campaign-manager-guide"
     },
     {
         "icon": "library_books",
         "title": "NGS Store Setup",
-        "doc": "/SopLibery/NGSSOP.pdf"
+        "doc": "/SopLibery/NGSSOP.pdf",
+        "url": "ngs-store-sop"
     },
     {
         "icon": "library_books",
         "title": "Prod to Pre-Prod Cloning",
-        "doc": "/SopLibery/ProdtoPre-Prod.pdf"
+        "doc": "/SopLibery/ProdtoPre-Prod.pdf",
+        "url": "cloning-prod"
     },
     {
         "icon": "library_books",
         "title": "Gamification Process",
-        "doc": "/SopLibery/Gamification.pdf"
+        "doc": "/SopLibery/Gamification.pdf",
+        "url": "gamification-sop"
     },
     {
         "icon": "library_books",
         "title": "Search Banner Setup",
-        "doc": "/SopLibery/SearchPage.pdf"
+        "doc": "/SopLibery/SearchPage.pdf",
+        "url": "searchpage-sop"
     },
     {
         
         "icon": "library_books",
         "title": "Flagship Sale Process",
-        "doc": "/SopLibery/Flagship.pdf"
+        "doc": "/SopLibery/Flagship.pdf",
+        "url": "flagshipsale-sop"
     }
 
 ]
