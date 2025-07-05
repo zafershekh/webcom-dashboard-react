@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import SopLibery from '../db/soplibery.json';
 
 
-const Sop = ({ onSelect }) => {
+const Sop = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredSops = SopLibery.filter(item =>
