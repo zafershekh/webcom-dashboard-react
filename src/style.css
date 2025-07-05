@@ -457,8 +457,6 @@ footer {
   box-sizing: border-box;
 }
 
-
-
 .url-block button {
   padding: 8px 12px;
   background: #4caf50;
@@ -477,6 +475,145 @@ footer {
   color: #aaa;
   font-style: italic;
   font-size: 15px;
+}
+
+
+/* Pid Converter design code start from here */
+.pid-converter-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  box-sizing: border-box;
+}
+
+.textarea-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textarea-header {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.textarea-block {
+  display: flex;
+  width: 100%;
+  height: calc(1.5em * 17 + 20px); /* Same as textarea height */
+  border: 1px solid #ccc;
+  overflow: hidden; /* prevent second scrollbar */
+}
+
+.textarea-line-number {
+  width: 40px;
+  background-color: #f5f5f5;
+  color: #999;
+  text-align: right;
+  padding: 10px 2px;
+  font-size: 13px;
+  line-height: 1.5em;
+  user-select: none;
+  overflow: hidden; 
+}
+.textarea-line-number div:nth-child(odd) {
+  background-color: #ffffff; /* White */
+}
+
+.textarea-line-number div:nth-child(even) {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+
+
+.textarea-design {
+  flex: 1;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 1.5em;
+  resize: none;
+  border: none;
+  outline: none;
+  overflow-y: scroll; 
+  scrollbar-width: thin;
+  font-family: inherit;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  gap: 12px;
+  padding-top: 0;   
+  height: 100%; 
+}
+
+/* --- Buttons --- */
+.button-column button {
+  background: linear-gradient(to bottom right, #ffffff, #f7f7f7);
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.button-column button:hover {
+  background: linear-gradient(to bottom right, #f0f0f0, #e6e6e6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* button clickable effect */
+.button-column button:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* --- Button icons --- */
+.button-column img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0.3);
+  transition: filter 0.2s;
+}
+
+.button-column button:hover img {
+  filter: brightness(0.1);
+}
+
+/* --- Dropdown --- */
+.pids-dropdownselection {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.pids-dropdownselection:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+}
+
+.pids-dropdownselection:focus {
+  outline: none;
+  border-color: #666;
+  box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
 }
 
 
@@ -524,7 +661,66 @@ footer {
     flex-direction: column;
     width: 90vw;     
   }
- 
+
+
+  /* Pid generator media query start for HERE */
+  .pid-converter-container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .textarea-wrapper {
+    width: 100%;
+  }
+
+  .textarea-block {
+    height: auto;
+    max-height: 400px;
+  }
+
+  .button-column {
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .pids-dropdownselection {
+    order: 2;  
+  }
+
+  .convert-btn {
+    order: 3;
+  }
+
+  .back-btn {
+    order: 1;
+  }
+
+  .clear-btn {
+    order: 4;
+  }
+
+  .button-column button,
+  .pids-dropdownselection {
+    width: auto;
+    min-width: 40px;
+    padding: 8px 10px;
+  }
+
+  .button-column img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .pids-dropdownselection {
+    font-size: 13px;
+  }
 }
 
+ 
 
