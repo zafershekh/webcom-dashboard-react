@@ -20,6 +20,12 @@
         "url": "/pidconverter"
     },
     {
+        "title": "Resource Hub",
+        "icon": "assistant_on_hub",
+        "url": "resource-hub"
+
+    },
+    {
         "title": "Mark My Calendar",
         "icon": "event",
         "url": "/markmycalendar"

@@ -10,6 +10,7 @@ import Faq from "./AppFeature/Faq";
 import SopViewer from './AppFeature/SopViewer';
 import PIDConverter from './AppFeature/PIDConverter';
 import MarkMyCalender from './AppFeature/MarkMyCalender';
+import EpochTimestamp from './AppFeature/EpochTimestamp';
 
 
 const PageContent = () => {
@@ -19,6 +20,7 @@ const PageContent = () => {
   const getTitle = (path) => {
   if (path.startsWith('/sop')) return 'SOP Library';
     switch (path) {
+      case '/epoctimer': return "Epoch Timestamp";
       case '/pidconverter': return "PID Converter";
       case '/markmycalendar': return "Mark My Calendar";
       case '/faq': return "FAQ's";
@@ -41,6 +43,7 @@ const PageContent = () => {
               <Route path='/markmycalendar' element={<MarkMyCalender />}/>
               <Route path="/sop/:id" element={<SopViewer />} />
               <Route path='/pidconverter' element={<PIDConverter />} />
+              <Route path='/epoctimer' element={<EpochTimestamp />} />
             </Routes>
           </main>
         </div>

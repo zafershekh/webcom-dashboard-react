@@ -484,11 +484,14 @@ footer {
   gap: 20px;
   align-items: flex-start;
   width: 100%;
-  padding: 20px;
-  background: white;
+  padding: 18px 30px 30px 30px;
+  background: #ffffff;
   border: 1px solid #ccc;
   font-family: monospace;
   box-sizing: border-box;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .textarea-wrapper {
@@ -636,11 +639,133 @@ footer {
 }
 
 
+/* Epoc Timestamp Design form HERE! */
+.timestamp-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding: 40px 30px;
+  max-width: 1000px; 
+  width: 100%;
+  margin: 40px auto 0;
+  flex-wrap: wrap;
+}
+
+.timestamp-card {
+  flex: 1;
+  min-width: 0; /* Avoid overflow */
+  background: #ffffff;
+  border: 1px solid #f0f0f0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.timestamp-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+
+.timestamp-input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+}
+
+.timestamp-button {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timestamp-button:hover {
+  background-color: #005f95;
+}
+
+.result-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #eee;
+  min-height: 48px; 
+  word-break: break-word;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.copy-icon-timer {
+  font-family: 'Material Symbols Outlined';
+  font-size: 22px;
+  color: #555;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.copy-icon-timer:hover {
+  color: #000;
+}
 
 
+@media (max-width: 768px) {
+  .timestamp-container {
+    flex-direction: column;
+    padding: 20px 16px;
+  }
 
+  .timestamp-card {
+    padding: 16px;
+  }
 
+  .timestamp-input,
+  .timestamp-button {
+    font-size: 15px;
+  }
 
+  .result-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;           
+    width: 100%;       
+    padding: 0 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 8px;
+  }
+
+  .copy-icon-timer {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 12px;
+  }
+
+}
 
 
 
