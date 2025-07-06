@@ -25,7 +25,7 @@ const LineNumberTextarea = ({
 
   const currentLineCount = Math.max(value.split('\n').length, initialLines);
   const handleCopy = () => {
-  if (textAreaRef) {
+  if (textAreaRef.current) {
     navigator.clipboard.writeText(textAreaRef.current.value)
       .then(() => {
         toast.success("URL copied to clipboard!");

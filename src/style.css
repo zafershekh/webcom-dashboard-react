@@ -585,12 +585,6 @@ footer {
 .button-column img {
   width: 20px;
   height: 20px;
-  filter: brightness(0.3);
-  transition: filter 0.2s;
-}
-
-.button-column button:hover img {
-  filter: brightness(0.1);
 }
 
 /* --- Dropdown --- */
