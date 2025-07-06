@@ -1,4 +1,7 @@
 import React, { useState, useRef } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import ClearICON from '../svg/close.svg';
 import RightArrow from '../svg/right-arrow.svg';
 import LeftArrow from '../svg/left-arrow.svg';
@@ -21,6 +24,17 @@ const LineNumberTextarea = ({
   };
 
   const currentLineCount = Math.max(value.split('\n').length, initialLines);
+  const handleCopy = () => {
+  if (textAreaRef) {
+    navigator.clipboard.writeText(textAreaRef.current.value)
+      .then(() => {
+        toast.success("URL copied to clipboard!");
+      })
+      .catch(() => {
+        toast.error("Failed to copy.");
+      });
+  }
+}
 
   return (
     <div className="textarea-wrapper">
@@ -31,18 +45,31 @@ const LineNumberTextarea = ({
             <div key={i}>{i + 1}</div>
           ))}
         </div>
-        <textarea
-          className="textarea-design"
-          ref={textAreaRef}
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          onScroll={syncScroll}
-          placeholder={placeholder}
-        />
+        <div className="textarea-copy-wrapper">
+          <textarea
+            className="textarea-design"
+            ref={textAreaRef}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            onScroll={syncScroll}
+            placeholder={placeholder}
+          />
+        
+        <span
+          className="copy-icon material-symbols-outlined"
+          onClick={handleCopy}
+          title="Copy to clipboard"
+        >
+          content_copy
+        </span>
+        </div>
       </div>
     </div>
+    
   );
 };
+
+
 
 const PIDConverter = () => {
   const [columnText, setColumnText] = useState('');
@@ -91,12 +118,12 @@ const PIDConverter = () => {
           <option value=";">Semicolon (;)</option>
         </select>
         <button onClick={convertToDelimited} className="convert-btn" title="Convert to delimited">
-          <img alt="→" src={RightArrow} />
+          <img alt="<" src={RightArrow} />
         </button>
         <button onClick={convertToColumn} className="back-btn" title="Convert to column">
-          <img alt="←" src={LeftArrow} />
+          <img alt=">" src={LeftArrow} />
         </button>
-        
+
         <button onClick={clearAll} className="clear-btn" title="Clear All">
           <img alt="Clear" src={ClearICON} />
         </button>
@@ -109,7 +136,9 @@ const PIDConverter = () => {
         onChange={setDelimitedText}
         placeholder="Comma/semicolon-separated PIDs here..."
       />
+      <ToastContainer position="top-right" autoClose={3000} />
     </div>
+    
   );
 };
 

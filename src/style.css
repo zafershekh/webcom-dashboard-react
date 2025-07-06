@@ -616,6 +616,32 @@ footer {
   box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
 }
 
+/* Added the copy button inside textarea */
+.textarea-copy-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.textarea-copy-wrapper textarea {
+  width: 100%;
+  padding-right: 36px; /* leave space for the icon */
+}
+
+.copy-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.copy-icon:hover {
+  color: #000;
+}
+
+
 
 
 

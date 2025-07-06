@@ -20,11 +20,6 @@
         "url": "/pidconverter"
     },
     {
-        "title": "Brand Inventory Finder",
-        "icon": "photo_library",
-        "url": "/inventoryfinder"
-    },
-    {
         "title": "Mark My Calendar",
         "icon": "event",
         "url": "/markmycalendar"
