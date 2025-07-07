@@ -11,6 +11,7 @@ import SopViewer from './AppFeature/SopViewer';
 import PIDConverter from './AppFeature/PIDConverter';
 import MarkMyCalender from './AppFeature/MarkMyCalender';
 import EpochTimestamp from './AppFeature/EpochTimestamp';
+import ResourceHUB from './AppFeature/ResourceHUB';
 
 
 const PageContent = () => {
@@ -20,6 +21,7 @@ const PageContent = () => {
   const getTitle = (path) => {
   if (path.startsWith('/sop')) return 'SOP Library';
     switch (path) {
+      case '/resource-hub': return "Resource Hub";
       case '/epoctimer': return "Epoch Timestamp";
       case '/pidconverter': return "PID Converter";
       case '/markmycalendar': return "Mark My Calendar";
@@ -44,6 +46,7 @@ const PageContent = () => {
               <Route path="/sop/:id" element={<SopViewer />} />
               <Route path='/pidconverter' element={<PIDConverter />} />
               <Route path='/epoctimer' element={<EpochTimestamp />} />
+              <Route path='/resource-hub' element={<ResourceHUB />} />
             </Routes>
           </main>
         </div>

@@ -1,0 +1,123 @@
+[
+  {
+    "title": "Ads Tech",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://ads.nykaa.com/campaigns"
+  },
+  {
+    "title": "Takeover Header",
+    "type": "Google Drive",
+    "icon": "cloud",
+    "url": "https://drive.google.com/drive/folders/13xOE4ADNMyIlCUjjYFxJ5kEv-Gx2jSEl"
+  },
+  {
+    "title": "Webcom Roster",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1TS9DHsRGPD3CqckeIMF0Rhwv9t-NXhwQw75WqV29JYA/edit?gid=0#gid=0"
+  },
+  {
+    "title": "Edna Dashboard",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://prod-nykaa-catalog-frontend.nyk00-int.network/dashboard"
+  },
+  {
+    "title": "Promation Builder",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://tools.nykaa.com/home"
+  },
+  {
+    "title": "Invetory  Management",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://prod-adtech-inventory-frontend.nyk00-int.network/inventoryManagement"
+  },
+  {
+    "title": "Retool",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://retool.nyk00-int.network/"
+  },
+  {
+    "title": "EMT Tools",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://emt.nykaa.com/marketing-calendar"
+  },
+  {
+    "title": "PageType Metadata",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1sBSk9vj87AoOfuF8YXoKZSi7yt_60hZsdd7ujP9KWYM/edit?gid=1449718981#gid=1449718981"
+  },
+  { 
+    "title": "StoryBook Prod",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://nykaa-widgets.nykaa.com/storybook/?path=/story/preview-service-previews--full-page-preview"
+  },
+  {
+    "title": "Ads Platform Prod",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://webcom.nykaa.com/inventory/?q=&page_types=search-page"
+  },
+  {
+    "title": "SiteMaster Tracker",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/11RtewTppvLcdP2_n7Abe7xHfb9PcJRRbIrUqBpop9aE/edit?usp=sharing"
+  },
+  {
+    "title": "StoryBook Prod",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://nykaa-widgets-staging.nykaa.com/storybook/?path=/story/preview-service-previews--full-page-preview"
+  },
+   {
+    "title": "Segment User List",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1RxZFDC8CH0el7ou_JDw4s3FOAuwcAME6eEsnq73nU6k/edit?gid=0#gid=0"
+  },
+  {
+    "title": "Ads Platform PreProd",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://preprod-webcom.nyk00-int.network/inventory/?q=&page_types=search-page"
+  },
+  {
+    "title": "PZN HP Calender",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1ainmz5P1j3ezc1mC9nRpoHAQS123j2vQObaPKeRwU0k/edit?usp=sharing"
+  }, 
+  {
+    "title": "Swagger Tool",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "http://prod-userprofile.nyk00-int.network/swagger-ui#/User/get_user"
+  }, 
+  {
+    "title": "Experiment Metadata",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1TLqU7326v8B7LiWELkK1kqTHxaiTCrbxMtwPgqwAiXs/edit?usp=sharing"
+  },
+  {
+    "title": "DN Support",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://forms.gle/UdMbPdBk2tw5XeYG9"
+  },
+  {
+    "title": "Segment List",
+    "type": "Spreadsheet",
+    "icon": "table_view",
+    "url": "https://docs.google.com/spreadsheets/d/1yTspf_ucaL1XcmiP0eqJkNuCoDjpgwtaff00QRMzL3Q/edit?gid=1334304103#gid=1334304103"
+  }
+
+]

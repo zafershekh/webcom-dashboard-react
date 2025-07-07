@@ -724,48 +724,102 @@ footer {
   color: #000;
 }
 
+/* ResourceHUB Design start from HERE! */
 
-@media (max-width: 768px) {
-  .timestamp-container {
-    flex-direction: column;
-    padding: 20px 16px;
-  }
-
-  .timestamp-card {
-    padding: 16px;
-  }
-
-  .timestamp-input,
-  .timestamp-button {
-    font-size: 15px;
-  }
-
-  .result-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 42px;           
-    width: 100%;       
-    padding: 0 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-    overflow: hidden;
-    gap: 8px;
-  }
-
-  .copy-icon-timer {
-    font-size: 20px;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.2s;
-    margin-left: 12px;
-  }
-
+.resource-hub-container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
+/* Header row with search */
+.resource-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+
+.resource-search {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 260px;
+  flex: 1;
+  max-width: 300px;
+}
+
+/* Grid layout */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row on desktop */
+  gap: 24px;
+}
+
+/* Responsive: 2 in a row for mobile */
+@media (max-width: 768px) {
+
+  .resource-hub-container {
+  padding: 5px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+  .resource-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resource-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resource-search {
+    width: 90%;
+    max-width: 100%;
+  }
+}
+
+/* Card styling */
+.resource-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #333;
+  transition: box-shadow 0.2s;
+}
+
+.resource-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.resource-icon {
+  font-size: 32px;
+  color: #4a90e2;
+}
+
+.resource-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resource-info p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #777;
+}
+
+
 
 
 
@@ -865,6 +919,50 @@ footer {
   .pids-dropdownselection {
     font-size: 13px;
   }
+
+
+  /* ============================== */
+  /* Epoc Timestamp Responsive Design form HERE! */
+
+  .timestamp-container {
+    flex-direction: column;
+    padding: 20px 16px;
+  }
+
+  .timestamp-card {
+    padding: 16px;
+  }
+
+  .timestamp-input,
+  .timestamp-button {
+    font-size: 15px;
+  }
+
+  .result-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;           
+    width: 100%;       
+    padding: 0 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+    gap: 8px;
+  }
+
+  .copy-icon-timer {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s;
+    margin-left: 12px;
+  }
+
 }
 
  

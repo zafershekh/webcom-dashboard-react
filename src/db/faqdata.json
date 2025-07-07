@@ -4,12 +4,16 @@
         "description": "No, Nykaa Keywork does not Randring on the iOS Devices. Kindly Reconfirm the same before proceeding."
     },
     {
-        "title": "Is it mandatory to update correct & accurate Analytical Title?",
-        "description":"Yes, This would assist in pulling out correct foorprints for individual tile."
+        "title": "Which URL should be used for Bank Strip, PDP & PLP also known as Site Coupon, if not provided by the team?",
+        "description":"Please ensure the provided link is used on both the PDP and PLP if a \"Shop Now\" button is present on the creative. The bank strip will always remain clickable. *If no link is provided, please use: https://www.nykaa.com/best-of-beauty/c/21447"
     },
     {
         "title": "How to add rupee sign while uploding bulk csv files?",
         "description":"You have to use ( â‚¹ ) instead of ₹ rupee Sign."
+    },
+    {
+        "title": "Is it mandatory to update correct & accurate Analytical Title?",
+        "description":"Yes, This would assist in pulling out correct foorprints for individual tile."
     },
     {
         "title": "How to make hybrid for Luxe Brands?",
