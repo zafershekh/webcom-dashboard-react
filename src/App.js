@@ -13,6 +13,7 @@ import MarkMyCalender from './AppFeature/MarkMyCalender';
 import EpochTimestamp from './AppFeature/EpochTimestamp';
 import ResourceHUB from './AppFeature/ResourceHUB';
 import UrlGenerator from './AppFeature/UrlGenerator';
+import JsonGenerator from './AppFeature/JsonGenerator';
 
 
 const PageContent = () => {
@@ -22,6 +23,7 @@ const PageContent = () => {
   const getTitle = (path) => {
   if (path.startsWith('/sop')) return 'SOP Library';
     switch (path) {
+      case '/jsongenerator': return "JSON Generator";
       case '/urlgenerator': return "Url Generator";
       case '/resource-hub': return "Resource Hub";
       case '/epoctimer': return "Epoch Timestamp";
@@ -50,6 +52,7 @@ const PageContent = () => {
               <Route path='/epoctimer' element={<EpochTimestamp />} />
               <Route path='/resource-hub' element={<ResourceHUB />} />
               <Route path='/urlgenerator' element={<UrlGenerator />} />
+              <Route path='/jsongenerator' element={<JsonGenerator />} />
             </Routes>
           </main>
         </div>
