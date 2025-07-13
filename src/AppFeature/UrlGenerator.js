@@ -32,7 +32,8 @@ const UrlGenerator = () => {
       name: pageType.replace(/-/g, ' ').toUpperCase(),
       desktop: desktopURL,
       app: appURL,
-      deeplink: deeplinkURL
+      deeplink: deeplinkURL,
+      entireURL: `Page Name: ${pageType.replace(/-/g, ' ').toUpperCase()}\nDesktop URL: ${desktopURL}\nApp URL: ${appURL}\nDeeplink: ${deeplinkURL}`
     });
   };
 
@@ -55,6 +56,7 @@ const UrlGenerator = () => {
             desktop: `https://www.nykaa.com/sp/${pageType}/${pageData}`,
             app: `https://www.nykaa.com/?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}`,
             deeplink: `nykaa://nykaa?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}`,
+            BulkentireURLs: `Page Name: ${pageType.replace(/-/g, ' ').toUpperCase()}\nDesktop: https://www.nykaa.com/sp/${pageType}/${pageData}\nApp: https://www.nykaa.com/?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}\nDeeplink: nykaa://nykaa?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}\n`
           };
         }
         return null;
@@ -66,19 +68,21 @@ const UrlGenerator = () => {
     setBulkResult(results);
   };
 
-  const handleCopy = (text) => {
+  const handleCopy = (text, label) => {
     navigator.clipboard.writeText(text);
-    toast.success("URL copied to clipboard!");
+    toast.success(`${label} copied to clipboard!`);
+    
+    
   };
 
-  const copyBulkPlatform = (platform) => {
+  const copyBulkPlatform = (platform, label) => {
     const urls = bulkResult.map((item) => item[platform]).join('\n');
-    handleCopy(urls);
+    handleCopy(urls, label);
   };
 
   return (
     <div className="url-generator-container">
-		<ToastContainer position="top-right" autoClose={3000} />
+		<ToastContainer position="top-right" autoClose={2000} />
       <div className="url-generator-card">
         <div className="toggle-tabs">
   <button
@@ -124,12 +128,20 @@ const UrlGenerator = () => {
               <div className="result-box">
                 <div className="result-line">
                   <strong>Page Name:</strong> {singleURLs.name}
+                  <span
+                    className="copy-button-url"
+                    onClick={() => handleCopy(singleURLs.entireURL, "Entire URL ")}
+                    title='Click to copy Entire URL'
+                  >
+                    Copy Link
+                  </span>
                 </div>
                 <div className="result-line">
                   <strong>Desktop:</strong> {singleURLs.desktop}
                   <span
                     className="material-symbols-outlined copy-icon-url"
-                    onClick={() => handleCopy(singleURLs.desktop)}
+                    onClick={() => handleCopy(singleURLs.desktop, "Desktop URL ")}
+                    title='Click to copy desktop URL'
                   >
                     content_copy
                   </span>
@@ -138,7 +150,8 @@ const UrlGenerator = () => {
                   <strong>App:</strong> {singleURLs.app}
                   <span
                     className="material-symbols-outlined copy-icon-url"
-                    onClick={() => handleCopy(singleURLs.app)}
+                    onClick={() => handleCopy(singleURLs.app,"App URL ")}
+                    title='Click to copy app URL'
                   >
                     content_copy
                   </span>
@@ -147,7 +160,8 @@ const UrlGenerator = () => {
                   <strong>Deeplink:</strong> {singleURLs.deeplink}
                   <span
                     className="material-symbols-outlined copy-icon-url"
-                    onClick={() => handleCopy(singleURLs.deeplink)}
+                    onClick={() => handleCopy(singleURLs.deeplink,"Deeplink URL ")}
+                    title='Click to copy deeplink URL'
                   >
                     content_copy
                   </span>
@@ -174,14 +188,17 @@ const UrlGenerator = () => {
             {bulkResult.length > 0 && (
               <>
                 <div className="bulk-copy-buttons">
-                  <button onClick={() => copyBulkPlatform('desktop')} className="copy-btn">
+                  <button onClick={() => copyBulkPlatform('desktop',"Desktop URLs ")} className="copy-btn">
                     Copy All Desktop URLs
                   </button>
-                  <button onClick={() => copyBulkPlatform('app')} className="copy-btn">
+                  <button onClick={() => copyBulkPlatform('app',"App URLs ")} className="copy-btn">
                     Copy All App URLs
                   </button>
-                  <button onClick={() => copyBulkPlatform('deeplink')} className="copy-btn">
+                  <button onClick={() => copyBulkPlatform('deeplink',"Deeplink URLs ")} className="copy-btn">
                     Copy All Deeplinks
+                  </button>
+                  <button onClick={() => copyBulkPlatform('BulkentireURLs',"Entire URLs ")} className="copy-btn">
+                    Copy All
                   </button>
                 </div>
 

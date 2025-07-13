@@ -56,8 +56,9 @@ const MarkMyCalenderInput = () => {
     };
 
     const copyToClipboard = (text) => {
+        const MarkMyCalenderCopyMessage = (text === appUrl) ? "App URL copied to clipboard!" : "Desktop URL copied to clipboard!";
         navigator.clipboard.writeText(text);
-        toast.success("URL copied to clipboard!");
+        toast.success(MarkMyCalenderCopyMessage);
     };
 
     return (

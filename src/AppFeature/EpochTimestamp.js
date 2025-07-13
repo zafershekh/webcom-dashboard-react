@@ -24,13 +24,14 @@ const EpochTimestamp = () => {
       const date = new Date(timestamp * 1000);
       setDateResult(date.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }));
     } else {
-      setDateResult("Invalid epoch time");
+      setDateResult("Invalid epoch Time");
     }
   };
 
   const handleCopy = (value) => {
+    const TimerCopyMessage = (value === epochResult ? "Epoc Date copied to clipboard!" : "Date copied to clipboard!" )
     navigator.clipboard.writeText(value);
-    toast.success("URL copied to clipboard!");
+    toast.success(TimerCopyMessage);
   };
 
   return (

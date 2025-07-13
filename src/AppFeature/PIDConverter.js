@@ -28,7 +28,7 @@ const LineNumberTextarea = ({
   if (textAreaRef.current) {
     navigator.clipboard.writeText(textAreaRef.current.value)
       .then(() => {
-        toast.success("URL copied to clipboard!");
+        toast.success("Pids copied to clipboard!");
       })
       .catch(() => {
         toast.error("Failed to copy.");
