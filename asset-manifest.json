@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/webcom-dashboard-react/static/css/main.0b05f8ae.css",
+    "main.js": "/webcom-dashboard-react/static/js/main.ea9df025.js",
+    "index.html": "/webcom-dashboard-react/index.html",
+    "static/media/close.svg": "/webcom-dashboard-react/static/media/close.35026380a66132b1be624935abea1086.svg",
+    "static/media/left-arrow.svg": "/webcom-dashboard-react/static/media/left-arrow.19d39b58fa77b93a6c535b207401d39f.svg",
+    "static/media/right-arrow.svg": "/webcom-dashboard-react/static/media/right-arrow.afaa18ba15323e2ed2f188784baddc63.svg",
+    "main.0b05f8ae.css.map": "/webcom-dashboard-react/static/css/main.0b05f8ae.css.map",
+    "main.ea9df025.js.map": "/webcom-dashboard-react/static/js/main.ea9df025.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b05f8ae.css",
+    "static/js/main.ea9df025.js"
+  ]
+}
