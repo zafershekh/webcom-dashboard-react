@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+#Webcom Dashboard (v2) 🚀
+Team Productivity Web Application Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek, fully responsive internal dashboard to boost team productivity by centralizing essential tools and workflows.
 
-## Available Scripts
+📌 Introduction
+Welcome to the enhanced version of the Webcom Team Productivity Toolbox!
+Originally designed to streamline repetitive tasks and improve team efficiency, this version takes it further with a modern UI, responsive design, and improved tools powered by React — including seamless PDF viewing with enhanced readability.
 
-In the project directory, you can run:
+⚙️ Features
+Tool	Description
+🔧 JSON Code Generator	Generate structured JSON quickly — even without prior JSON knowledge.
+⏱️ Epoch Time Converter	Convert between human-readable time and Epoch timestamps in a flash.
+🗓️ Mark My Calendar Generator	Create app and desktop-compatible calendar links to streamline scheduling.
+🔗 URL Generator (Bulk & Single)	Build accurate, customized URLs in bulk or individually.
+📄 SOP & FAQ Repository	View SOPs directly in the app using a built-in PDF viewer powered by react-pdf for optimal visibility and mobile responsiveness.
+🆔 PID Separator	Efficiently split and format PIDs (Process IDs) as per project or platform requirements.
+📚 Resource Hub	A one-stop collection of all essential resources:
+    • Dashboard links (e.g., AdsTech, Retool)	
+    • Important Excel sheets (e.g., segment lists, experiment data)	
+    • Google Drive for HP/Hybrid guidelines & takeover docs	
+    • Figma links with creative templates and more	
 
-### `npm start`
+✅ All tools are now smarter, faster, and mobile-friendly — including SOP PDFs!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✨ Improvements in v2
+🎨 Fully Responsive UI — Adapts seamlessly across all screen sizes.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📄 PDF Viewer Integration — View SOP files directly in the app using react-pdf, optimized for clarity and mobile support.
 
-### `npm test`
+⚛️ Component-Based Architecture — Clean, scalable code for long-term use.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🧭 Improved UX — Faster navigation, intuitive layout, better feedback.
 
-### `npm run build`
+🔔 Toast Notifications — Instant feedback for every user action.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🧼 Modernized Codebase — ES6+, reusable components, modular CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Tech Stack
+React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JavaScript (ES6+)
 
-### `npm run eject`
+HTML5 & CSS3
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React-PDF — PDF rendering for SOP documents
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React-Toastify — Notifications
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+(Custom styling — no Bootstrap or UI libraries used)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+🔗 Previous Version
+Want to see the original Javascript-based version?
+👉 Webcom Dashboard v1
+https://github.com/zafershekh/webcom-dashboard
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🙌 Acknowledgments
+Thanks for checking out the Webcom Dashboard. Built with passion to remove complexity from your day-to-day tasks and centralize what really matters. ✨
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👨‍💻 Author
+Mohammad Zafer Shekh
+GitHub: @zafershekh
