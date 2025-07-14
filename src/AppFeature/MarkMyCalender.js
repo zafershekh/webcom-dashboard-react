@@ -73,11 +73,11 @@ const MarkMyCalenderInput = () => {
                     <label>Event Description</label>
                     <textarea name="description" value={getData.description} onChange={handleChanges} placeholder="Enter description"></textarea>
 
-                    <label>Start Date & Time</label>
-                    <input type="datetime-local" name="startdatetime" value={getData.startdatetime} onChange={handleChanges} />
+                    <label htmlFor='MMCStartDate'>Start Date & Time</label>
+                    <input type="datetime-local" id='MMCStartDate' name="startdatetime" value={getData.startdatetime} onChange={handleChanges} />
 
-                    <label>End Date & Time</label>
-                    <input type="datetime-local" name="enddatetime" value={getData.enddatetime} onChange={handleChanges} />
+                    <label htmlFor='MMCEndDate'>End Date & Time</label>
+                    <input type="datetime-local" id='MMCEndDate' name="enddatetime" value={getData.enddatetime} onChange={handleChanges} />
 
                     <button type="submit">Generate URLs</button>
                 </form>

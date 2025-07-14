@@ -415,12 +415,20 @@ footer {
 
 .calendar-form input,
 .calendar-form textarea {
+  width: 100%;
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 15px;
   resize: none;
   box-sizing: border-box;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
+  @media (max-width: 768px) {
+    font-size: 16px;
+    min-height: 48px;
+  }
 }
 
 .calendar-form button {
