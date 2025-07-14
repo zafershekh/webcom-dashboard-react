@@ -688,14 +688,18 @@ footer {
 }
 
 .timestamp-input {
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
-  background-color: #fafafa;
+  border-radius: 8px;
   box-sizing: border-box;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
   @media (max-width: 768px) {
     font-size: 16px;
+    min-height: 48px;
   }
 }
 

@@ -38,8 +38,9 @@ const EpochTimestamp = () => {
     <div className="timestamp-container">
      <ToastContainer position="top-right" autoClose={3000} />
       <div className="timestamp-card">
-        <label className="timestamp-label">Date/Time to Epoch</label>
+        <label className="timestamp-label" htmlFor="datetimeid">Date/Time to Epoch</label>
         <input
+          id="datetimeid"
           type="datetime-local"
           value={userDateTime}
           onChange={(e) => setUserDateTime(e.target.value)}
