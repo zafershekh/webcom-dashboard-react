@@ -20,7 +20,7 @@ const JsonGenerator = () => {
     SetSegmentCheckbox(ev.target.checked);
   };
 
-  const HandleClearEvent = () =>{
+  const HandleClearEvent = () => {
     SetPids([]);
     SetTabbed([]);
     SetSegment([]);
@@ -72,28 +72,28 @@ const JsonGenerator = () => {
     <div className='JsonGenerator-Container'>
       <ToastContainer position="top-right" autoClose={3000} />
       <div className='btn-bar-right'>
-  <a href='/pidconverter' className='redirection-button' target='_blank'>Pids Converter</a>
+        <a href='/webcom-dashboard-react/pidconverter' className='redirection-button' target='_blank'>Pids Converter</a>
 
-  <div className="checkbox-group">
-    <input
-      type='checkbox'
-      checked={TabbedCheckbox}
-      onChange={HandleTabbedCheckbox}
-      id="tabbedCheckbox"
-    />
-    <label htmlFor="tabbedCheckbox">Tabbed</label>
-  </div>
+        <div className="checkbox-group">
+          <input
+            type='checkbox'
+            checked={TabbedCheckbox}
+            onChange={HandleTabbedCheckbox}
+            id="tabbedCheckbox"
+          />
+          <label htmlFor="tabbedCheckbox">Tabbed</label>
+        </div>
 
-  <div className="checkbox-group">
-    <input
-      type='checkbox'
-      checked={SegmentCheckbox}
-      onChange={HandleSegmentCheckbox}
-      id="segmentCheckbox"
-    />
-    <label htmlFor="segmentCheckbox">Segment</label>
-  </div>
-</div>
+        <div className="checkbox-group">
+          <input
+            type='checkbox'
+            checked={SegmentCheckbox}
+            onChange={HandleSegmentCheckbox}
+            id="segmentCheckbox"
+          />
+          <label htmlFor="segmentCheckbox">Segment</label>
+        </div>
+      </div>
 
 
       {Array.from({ length: counter }).map((_, i) => (
@@ -146,25 +146,23 @@ const JsonGenerator = () => {
         </div>
       ))}
 
-  <div className="button-group">
-  <button className="btn add-btn" onClick={() => setCounter(counter + 1)}>+ Add</button>
-  <button className="btn remove-btn" onClick={() => counter > 1 && setCounter(counter - 1)}>- Remove</button>
-  <button className="btn json-btn" onClick={handleJsonData}>Get JSON Data</button>
-  <button className="btn clear-btn" onClick={HandleClearEvent}>Clear All</button>
-  </div>
+      <div className="button-group">
+        <button className="btn add-btn" onClick={() => setCounter(counter + 1)}>+ Add</button>
+        <button className="btn remove-btn" onClick={() => counter > 1 && setCounter(counter - 1)}>- Remove</button>
+        <button className="btn json-btn" onClick={handleJsonData}>Get JSON Data</button>
+        <button className="btn clear-btn" onClick={HandleClearEvent}>Clear All</button>
+      </div>
 
 
       {data && (
         <div className='result-container'>
-          <div className='btn-bar-right'>
             <span
-                    className="material-symbols-outlined copy-icon-url"
-                    onClick={handleCopy}
-                    title='Copy Json'
-                  >
-                    content_copy
-                  </span>
-          </div>
+              className="material-symbols-outlined copy-icon-url"
+              onClick={handleCopy}
+              title='Copy Json'
+            >
+              content_copy
+            </span>
           <pre className='json-output'>{JSON.stringify(data, null, 2)}</pre>
         </div>
       )}

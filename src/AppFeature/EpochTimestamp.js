@@ -22,7 +22,7 @@ const EpochTimestamp = () => {
     const timestamp = Number(epochInput);
     if (!isNaN(timestamp)) {
       const date = new Date(timestamp * 1000);
-      setDateResult(date.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }));
+      setDateResult(date.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }).toUpperCase());
     } else {
       setDateResult("Invalid epoch Time");
     }
