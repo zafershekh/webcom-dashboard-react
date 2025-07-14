@@ -27,7 +27,7 @@ const SopViewer = () => {
         <div className="spinner">Loading SOP document...</div>
       )}
       <Document
-        file={sop.doc}
+        file={process.env.PUBLIC_URL + sop.doc}
         onLoadSuccess={onDocumentLoadSuccess}
         onLoadError={(error) => {
           console.error("PDF load error:", error);

@@ -65,7 +65,7 @@ const PageContent = () => {
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/webcom-dashboard-react">
         <PageContent />
       </Router>
     </>
