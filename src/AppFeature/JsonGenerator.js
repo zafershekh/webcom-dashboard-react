@@ -68,12 +68,13 @@ const JsonGenerator = () => {
     toast.success("JSON copied to clipboard!");
   };
 
+
+
   return (
     <div className='JsonGenerator-Container'>
       <ToastContainer position="top-right" autoClose={3000} />
       <div className='btn-bar-right'>
-        <a href='/webcom-dashboard-react/pidconverter' className='redirection-button' target='_blank'>Pids Converter</a>
-
+        <a href='/webcom-dashboard-react/#/pidconverter' target='_blank' className='redirection-button'>Pids Converter</a>
         <div className="checkbox-group">
           <input
             type='checkbox'

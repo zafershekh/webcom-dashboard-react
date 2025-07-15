@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import SideNavigation from "./Component/sideNavigation";
 import TopHeader from "./Component/TopHeader";
@@ -65,7 +65,7 @@ const PageContent = () => {
 function App() {
   return (
     <>
-      <Router basename="/webcom-dashboard-react">
+      <Router>
         <PageContent />
       </Router>
     </>
