@@ -82,7 +82,7 @@ const UrlGenerator = () => {
 
   return (
     <div className="url-generator-container">
-		<ToastContainer position="top-right" autoClose={1500} />
+		<ToastContainer position="top-right" autoClose={500} />
       <div className="url-generator-card">
         <div className="toggle-tabs">
   <button

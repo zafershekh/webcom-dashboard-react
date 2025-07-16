@@ -36,7 +36,7 @@ const EpochTimestamp = () => {
 
   return (
     <div className="timestamp-container">
-     <ToastContainer position="top-right" autoClose={1500} />
+     <ToastContainer position="top-right" autoClose={500} />
       <div className="timestamp-card">
         <label className="timestamp-label" htmlFor="datetimeid">Date/Time to Epoch</label>
         <input

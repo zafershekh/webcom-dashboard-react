@@ -136,7 +136,7 @@ const PIDConverter = () => {
         onChange={setDelimitedText}
         placeholder="Comma/semicolon-separated PIDs here..."
       />
-      <ToastContainer position="top-right" autoClose={1500} />
+      <ToastContainer position="top-right" autoClose={500} />
     </div>
     
   );
