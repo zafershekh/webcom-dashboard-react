@@ -63,7 +63,7 @@ const MarkMyCalenderInput = () => {
 
     return (
         <div className="calendar-wrapper">
-            <ToastContainer position="top-right" autoClose={3000} />
+            <ToastContainer position="top-right" autoClose={1500} />
             <div className="calendar-form-card">
                 <h2>Mark My Calendar</h2>
                 <form onSubmit={handleSubmit} className="calendar-form">

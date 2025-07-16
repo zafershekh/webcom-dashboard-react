@@ -72,7 +72,7 @@ const JsonGenerator = () => {
 
   return (
     <div className='JsonGenerator-Container'>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={1500} />
       <div className='btn-bar-right'>
         <a href='/webcom-dashboard-react/#/pidconverter' target='_blank' className='redirection-button'>Pids Converter</a>
         <div className="checkbox-group">
