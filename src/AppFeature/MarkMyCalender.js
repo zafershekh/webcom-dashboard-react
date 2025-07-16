@@ -49,7 +49,12 @@ const MarkMyCalenderInput = () => {
 
             setIsGenerated(true); //show result
         } else {
-            toast.error("Please fill in all the fields.");
+            toast.error("Please fill in all the fields.",
+                {
+                    autoClose: 3000,
+                }
+
+            );
             // alert("Please fill in all the fields.")
             setIsGenerated(false); // hide result and throw Popup
         }

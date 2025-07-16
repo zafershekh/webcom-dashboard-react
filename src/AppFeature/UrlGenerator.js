@@ -20,7 +20,11 @@ const UrlGenerator = () => {
         app: '-',
         deeplink: '-'
       });
-	  toast.error("Please fill in all the fields.");
+      toast.error("Please fill in all the fields.",
+        {
+          autoClose: 3000,
+        }
+      );
       return;
     }
 
@@ -40,7 +44,11 @@ const UrlGenerator = () => {
   const handleBulkURL = () => {
     if (!bulkInput.trim()) {
       setBulkResult([]);
-      toast.error("Please fill in all the fields.");
+      toast.error("Please fill in all the fields.",
+        {
+          autoClose: 3000,
+        }
+      );
       return;
     }
 
@@ -60,7 +68,9 @@ const UrlGenerator = () => {
           };
         }
         return null;
+          
       } catch {
+        toast.error("Invalid URL Format Detected!", { autoClose: 3000,});
         return null;
       }
     }).filter(Boolean);

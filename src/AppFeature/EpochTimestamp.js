@@ -14,17 +14,22 @@ const EpochTimestamp = () => {
     if (!isNaN(date.getTime())) {
       setEpochResult(Math.floor(date.getTime() / 1000));
     } else {
-      setEpochResult("Invalid date");
+      // setEpochResult("Invalid date");
+      toast.error("Date & Time Required.",{autoClose: 3000,});
     }
   };
 
   const convertEpochToDate = () => {
     const timestamp = Number(epochInput);
-    if (!isNaN(timestamp)) {
+    if(!epochInput){
+      toast.error("EPOCH Time Required.",{autoClose: 3000,});
+    }
+    else if (!isNaN(timestamp)) {
       const date = new Date(timestamp * 1000);
       setDateResult(date.toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }).toUpperCase());
     } else {
-      setDateResult("Invalid epoch Time");
+      // setDateResult("Invalid epoch Time");
+      toast.error("Invalid EPOCH Time.",{autoClose: 3000,});
     }
   };
 

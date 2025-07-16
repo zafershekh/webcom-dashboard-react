@@ -31,7 +31,7 @@ const LineNumberTextarea = ({
         toast.success("Pids copied to clipboard!");
       })
       .catch(() => {
-        toast.error("Failed to copy.");
+        toast.error("Failed to copy.", { autoClose: 3000,});
       });
   }
 }
@@ -77,6 +77,9 @@ const PIDConverter = () => {
   const [delimiter, setDelimiter] = useState(',');
 
   const convertToDelimited = () => {
+    if(!columnText){
+      toast.error("The column-wise PID entry is blank",{autoClose: 3000,});
+    }
     const lines = columnText
       .split('\n')
       .map(line => line.trim())
@@ -85,6 +88,9 @@ const PIDConverter = () => {
   };
 
   const convertToColumn = () => {
+    if(!delimitedText){
+      toast.error("You need to fill in the delimited PIDs.",{autoClose: 3000,});
+    }
     const items = delimitedText
       .split(delimiter)
       .map(item => item.trim())
