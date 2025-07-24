@@ -14,12 +14,6 @@ const UrlGenerator = () => {
 
   const handleSingleURL = () => {
     if (!pageType || !pageData) {
-      setSingleURLs({
-        name: 'Please add request',
-        desktop: '-',
-        app: '-',
-        deeplink: '-'
-      });
       toast.error("Please fill in all the fields.",
         {
           autoClose: 3000,
@@ -66,6 +60,9 @@ const UrlGenerator = () => {
             deeplink: `nykaa://nykaa?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}`,
             BulkentireURLs: `Page Name: ${pageType.replace(/-/g, ' ').toUpperCase()}\nDesktop: https://www.nykaa.com/sp/${pageType}/${pageData}\nApp: https://www.nykaa.com/?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}\nDeeplink: nykaa://nykaa?dl_type=nlp&pagetype=${pageType}&pagedata=${pageData}\n`
           };
+        }
+        else{
+           toast.error("Invalid Beauty Landing Page URL", { autoClose: 3000,});
         }
         return null;
           
