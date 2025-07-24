@@ -77,6 +77,12 @@
     "icon": "link",
     "url": "https://nykaa-widgets-staging.nykaa.com/storybook/?path=/story/preview-service-previews--full-page-preview"
   },
+  {
+    "title": "Hybrid Figma",
+    "type": "Figma",
+    "icon": "design_services",
+    "url": "https://www.figma.com/design/VcObno5f2uCa8qQFU9HebC/Hybrid-Brand-PLP--24---Nykaa-%F0%9F%9A%80-BTTF---Discovery?node-id=10-31571&t=G5KsAH23GMP8h06t-1"
+  },
    {
     "title": "Segment User List",
     "type": "Spreadsheet",
@@ -101,6 +107,12 @@
     "icon": "link",
     "url": "http://prod-userprofile.nyk00-int.network/swagger-ui#/User/get_user"
   }, 
+   {
+    "title": "Luxe Store Figma",
+    "type": "Figma",
+    "icon": "design_services",
+    "url": "https://www.figma.com/design/F6cp1wJh0C8ke0RGvQpB5Z/Store-Page---Luxe---Discovery?node-id=4539-62425&t=sBtmNGMRph0mER6T-1"
+  },
   {
     "title": "Experiment Metadata",
     "type": "Spreadsheet",
@@ -118,6 +130,12 @@
     "type": "Spreadsheet",
     "icon": "table_view",
     "url": "https://docs.google.com/spreadsheets/d/1yTspf_ucaL1XcmiP0eqJkNuCoDjpgwtaff00QRMzL3Q/edit?gid=1334304103#gid=1334304103"
+  },
+  {
+    "title": "Design Figma",
+    "type": "Figma",
+    "icon": "design_services",
+    "url": "https://www.figma.com/design/ZxeIGbXEZ3xk5NyXZfkOTE/Template-Builder-Handoff---Display-Network---Discovery?m=auto&node-id=1361-168320&t=sETt9sbJJSxIcpg7-1"
   }
 
 ]
