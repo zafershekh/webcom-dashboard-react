@@ -33,6 +33,13 @@ const JsonGenerator = () => {
 
   const handleJsonData = () => {
     const result = {};
+    const isAllEmpty = Pids.every(pid => !pid || pid.trim() === '');
+    if (isAllEmpty) {
+      toast.error("No PID? Shocking! 🙄", {
+        autoClose: 3000
+      });
+      return;
+    }
 
     Pids.forEach((pidInput, i) => {
       if (!pidInput) return;
@@ -42,7 +49,6 @@ const JsonGenerator = () => {
       const segmentValue = SegmentCheckbox && Segment[i] ? Segment[i].trim() : null;
 
       pidList.forEach(pid => {
-        if (!pid) return;
 
         if (!result[pid]) {
           result[pid] = {};
