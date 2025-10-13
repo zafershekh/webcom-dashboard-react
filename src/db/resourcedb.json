@@ -24,10 +24,16 @@
     "url": "https://prod-nykaa-catalog-frontend.nyk00-int.network/dashboard"
   },
   {
-    "title": "Promation Builder",
+    "title": "Prod Pivort Builder",
     "type": "Bookmark Folder",
     "icon": "link",
     "url": "https://tools.nykaa.com/home"
+  },
+  {
+    "title": "Pre-Prod Pivort Builder",
+    "type": "Bookmark Folder",
+    "icon": "link",
+    "url": "https://preprod-dn-internal-tool.nyk00-int.network/pivotSegmentManager"
   },
   {
     "title": "Invetory  Management",
