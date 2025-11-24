@@ -7,6 +7,18 @@
     },
     {
         "icon": "library_books",
+        "title": "Bottom Navigation SOP",
+        "doc": "/SopLibery/BottomNavigationSOP.pdf",
+        "url": "bottom-navigation-sop"
+    },
+    {
+        "icon": "library_books",
+        "title": "Overlay SOP",
+        "doc": "/SopLibery/OverlaySOP.pdf",
+        "url": "overlay-sop"
+    },
+    {
+        "icon": "library_books",
         "title": "Pink Box Setup",
         "doc": "/SopLibery/PinkBox.pdf",
         "url": "pinkbox-seup"
