@@ -19,6 +19,12 @@
     },
     {
         "icon": "library_books",
+        "title": "Segment Creations",
+        "doc": "/SopLibery/SegmentCreations.pdf",
+        "url": "segment-creations"
+    },
+    {
+        "icon": "library_books",
         "title": "Pink Box Setup",
         "doc": "/SopLibery/PinkBox.pdf",
         "url": "pinkbox-seup"
