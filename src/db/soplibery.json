@@ -13,6 +13,12 @@
     },
     {
         "icon": "library_books",
+        "title": "Splash Screen SOP",
+        "doc": "/SopLibery/SplashScreenSOP.pdf",
+        "url": "overlay-sop"
+    },
+    {
+        "icon": "library_books",
         "title": "Overlay SOP",
         "doc": "/SopLibery/OverlaySOP.pdf",
         "url": "overlay-sop"
